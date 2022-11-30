@@ -1,0 +1,49 @@
+// Cikarma Test
+
+	@Test
+	public void cikarmaIslemi() {
+		int sayi1 = 40;
+		int sayi2 = 20;
+		Hesaplama h = new Hesaplama();
+	
+		long gerceklesen = h.cikarma(sayi1, sayi2);
+		
+		assertEquals(20, gerceklesen);
+	}
+
+// Carpma Test
+	@Test
+	public void carpmaIslemi() {
+		int sayi1 = 10;
+		int sayi2 = 10;
+		Hesaplama h = new Hesaplama();
+	
+		int gerceklesen = h.carpma(sayi1, sayi2);
+		
+		assertEquals(100, gerceklesen);
+	}
+
+// Bolme Test
+	@Test
+	public void BolmeIslemi() {
+		int sayi1 = 50;
+		int sayi2 = 10;
+		Hesaplama h = new Hesaplama();
+	
+		int gerceklesen = h.bolme(sayi1, sayi2);
+		
+		assertEquals(5, gerceklesen);
+	}
+
+// Us Alma Test		
+	@Test
+	public void usAlmaIslemi() {
+		int taban = 2;
+		int üs = 3;
+		Hesaplama h = new Hesaplama();
+
+		int gerceklesen = h.bolme(taban, üs);
+	
+		assertEquals(8, gerceklesen);
+	}
+}

@@ -1,0 +1,50 @@
+// Cikarma Islemi
+	public static void cikarmaIslemi(String[] args) {
+		Hesaplama h = new Hesaplama();
+		long CikarmaSonucu = h.cikarma(40, 20);
+		System.out.println(CikarmaSonucu);
+	}
+	int cikarma(int sayi1, int sayi2) {
+		int sonuc = (int) sayi1-sayi2;
+		return sonuc;
+	}
+	
+// Carpma Islemi
+	public static void carpmaIslemi(String[] args) {
+		Hesaplama h = new Hesaplama();
+		long CarpmaSonucu = h.carpma(10, 10);
+		System.out.println(CarpmaSonucu);
+	}
+	int carpma(int sayi1, int sayi2) {
+		int sonuc = (int) sayi1*sayi2;
+		return sonuc;
+	}
+
+// Bolme Islemi
+	public static void bolmeIslemi(String[] args) {
+		Hesaplama h = new Hesaplama();
+		long BolmeSonucu = h.bolme(50, 10);
+		System.out.println(BolmeSonucu);
+	}
+	int bolme(int sayi1, int sayi2) {
+		int sonuc = (int) sayi1/sayi2;
+		return sonuc;
+	}
+
+// Us Alma
+	public static void usAlmaIslemi(String[] args) {
+	
+		Hesaplama h = new Hesaplama();
+		long IslemSonucu = h.usAlma(2, 3);
+		System.out.println(IslemSonucu);
+	}
+	
+		int usAlma(int taban, int üs) {
+		
+		int sonuc=1;
+		for (int i=1;i<=üs;i++);
+		
+		sonuc=sonuc*taban;
+		return sonuc;
+	}
+}
